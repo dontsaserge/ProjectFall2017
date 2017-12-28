@@ -1,0 +1,44 @@
+product(
+	product_id int not null auto_increment primary key,
+	product_name varchar(100) not null,
+	product_brand varchar(100) not null,
+	product_price decimal(6,2) not null,
+	product_size varchar(60) not null,
+	index (prodcut_name),
+	index (price),
+	index (product_brand)
+);
+
+order_content(
+	ordercon_id int not null auto_increment primary key,
+	order_id int not null foreign key reference order(order_id),
+	product_id int not null foreign key reference product(product_id),
+	quantity int not null,
+	price decimal(6,2) not null,
+	ship_date datetime not null,
+	index (order_id),
+	index (product_id),
+	index (ship_date)
+);
+
+orders(
+	order_id int not null primary key,
+	user_id int not null foreing key reference users(user_id),
+	total decimal(10,2) not null,
+	order_date timestamp,
+	index (user_id),
+	index (order_date)
+);
+
+users(
+	user_id not null auto_increment primary key,
+	fname varchar(100) not null,
+	lname varchar(100) not null,
+	email varchar(256) not null,
+	password varchar(528) not null,
+	registration_date datetime not null,
+	user_level int(1) not null
+	unique(email),
+	index login(email, pass)
+	
+);

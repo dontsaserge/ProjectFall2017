@@ -1,0 +1,150 @@
+body{
+	height: 100%;
+}
+.jumbotron{
+	background-image: url('image/1st_rainmeter_wallpaper_by_monsterervin-d5kguz3.jpg');
+	color: #ffffff;
+	font-family:University;
+	margin-top: 0px;
+	height: 50%;
+
+}
+.page-header{
+	font-family: "Arial Black";
+	margin: 0px;
+	
+	
+}
+#myCarousel{
+	height: 100%;
+}
+ul.list-group li a{
+	text-decoration: none;
+	font-weight: bold;
+} 
+#myCarousel
+{
+	height: 75%;
+}
+.wrapper{
+	min-height: 100%;
+	position: relative;
+}
+
+nav{
+	background-color:#8E8E8E;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	margin: 0px;
+	padding-top: 10px;
+	
+}
+.navbar-default{
+	margin-bottom:0px;
+}
+#page-header{
+	height: 50%;
+	background-color: #21313F;
+}
+
+
+/* BOOTSTRAP 3.x GLOBAL STYLES
+-------------------------------------------------- */
+
+
+.overlay { 
+  color:#fff;
+  position:absolute;
+  z-index:12;
+  top:50%;
+  left:0;
+  width:100%;
+  text-align:center;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 40px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 1;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 400px;
+  background-color:#555;
+}
+.carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 400px;
+}
+
+footer{
+	background-color:#21313F;
+	height: 360px;
+	color: #ffffff;
+	padding-top: 40px;
+	padding-bottom: 40;
+	position: relative;
+	margin-top: 0px;
+}
+footer ul{
+	list-style: none;
+	color: #ffffff;
+}
+footer ul li{
+	border-bottom:dotted #504F5F 0.5px;
+	margin-bottom: 6px;
+}
+
+footer ul li a{
+	font-size: 16px;
+	
+}
+footer h2{
+	font-size: 17px;
+	text-align: left;
+	font-weight: bold;
+	padding-left: 39px;
+	
+}
+
+
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+    margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+  }
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+}
